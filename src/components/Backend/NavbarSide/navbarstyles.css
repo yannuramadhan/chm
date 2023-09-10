@@ -1,0 +1,98 @@
+.navbartop {
+  background-color: #060b26;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.burger {
+  @media only screen and (max-width: 890px) {
+    display: block;
+  }
+
+  display: none;
+}
+
+.burger svg {
+  fill: #2e186a;
+}
+
+.nav-menu {
+  background-color: #060b26;
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 850ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #1a83ff;
+}
+
+.nav-menu.active {
+  transition: 350ms;
+}
+
+.nav-menu-items {
+  width: 100%;
+  padding-top: 28px;
+  padding-left: 25px;
+}
+
+.navbar-toggle {
+  background-color: #060b26;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.icon-button {
+  background-color: transparent;
+  /* Menghilangkan latar belakang */
+  border: none;
+  /* Menghilangkan garis tepi */
+  padding: 0;
+  /* Menghilangkan padding */
+  cursor: pointer;
+  /* Mengubah kursor menjadi tangan saat diarahkan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  /* Jarak dari elemen lain di sebelah kanan */
+}
+
+.inactive {
+  display: none;
+  /* atau gaya CSS lainnya untuk menonaktifkan tampilan */
+}
